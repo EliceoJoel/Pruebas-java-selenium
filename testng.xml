@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test-Suite" >
+   <test name="Login Success" >
+       <classes> 
+          <class name="Tests.DepartureCitySelectionTest">
+             <methods>
+                <include name="VerifyTheDepartureCitySelection" />
+             </methods>
+          </class>
+       </classes>
+   </test>
+ </suite>
