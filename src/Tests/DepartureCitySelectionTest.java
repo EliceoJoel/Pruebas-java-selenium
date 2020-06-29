@@ -28,27 +28,14 @@ public class DepartureCitySelectionTest {
 		/*Se envia el usuario y contrasena*/
 		signInPage.EnterCredentials("EliceoH", "e12345");
 		/*Se envia la ciudad de origen*/
-		FlightPage.departureCity("Londres");
-	    Assert.assertTrue(SelectPage.IsButtonDisplayed("reserveFlights"), "Button was not displayed");
-	  }
-	
-	@Test
-     public void VerifyTheDestinationCitySelection() {
-	    
-		signInPage = new IndexPage(driver);
-		FlightPage = new FlightFinderPage(driver);
-		SelectPage = new SelectFlightPage(driver);
-		/*Se envia el usuario y contrasena*/
-		signInPage.EnterCredentials("EliceoH", "e12345");
-		/*Se envia la ciudad de destino*/
-		FlightPage.destinationCity("New York");
+		FlightPage.departureCity("París");
 	    Assert.assertTrue(SelectPage.IsButtonDisplayed("reserveFlights"), "Button was not displayed");
 	  }
 	
 	
 	@BeforeTest
 	public void setup() {
-		System.setProperty("webdriver.chrome.driver","F:\\chromedriver.exe");					
+		System.setProperty("webdriver.chrome.driver","F:\\projects in eclipse/chromedriver.exe");					
 		driver = new ChromeDriver();					  									
 		driver.get(baseUrl);
 		

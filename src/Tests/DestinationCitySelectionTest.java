@@ -20,7 +20,7 @@ public class DestinationCitySelectionTest {
 	private SelectFlightPage SelectPage;
 	
 	@Test
-	public void VerifyTheDstinationCitySelection() {
+	public void VerifyTheDestinationCitySelection() {
 	    
 		signInPage = new IndexPage(driver);
 		FlightPage = new FlightFinderPage(driver);
@@ -35,7 +35,7 @@ public class DestinationCitySelectionTest {
 	
 	@BeforeTest
 	public void setup() {
-		System.setProperty("webdriver.chrome.driver","F:\\chromedriver.exe");					
+		System.setProperty("webdriver.chrome.driver","F:\\projects in eclipse/chromedriver.exe");					
 		driver = new ChromeDriver();					  									
 		driver.get(baseUrl);
 		

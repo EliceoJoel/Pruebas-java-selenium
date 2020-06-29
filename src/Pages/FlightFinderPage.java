@@ -34,7 +34,7 @@ public class FlightFinderPage {
 	@FindBy(xpath = ".//*[@value='First']")
 	private WebElement clasePrimera;
 	@FindBy(xpath = ".//*[@name='findFlights']")
-	private WebElement continuar;
+	private WebElement Continue;
     
     
     public FlightFinderPage(WebDriver driver){
@@ -46,7 +46,7 @@ public class FlightFinderPage {
     	
     	partiendoDe.sendKeys(ciudadOrigen);
     	
-    	continuar.click();
+    	Continue.click();
     	return new SelectFlightPage(driver);
     }  
     
@@ -54,7 +54,7 @@ public class FlightFinderPage {
     	
     	llevarA.sendKeys(ciudadDestino);
     	
-    	continuar.click();
+    	Continue.click();
     	return new SelectFlightPage(driver);
     } 
 
