@@ -5,18 +5,17 @@ import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
-import Paginas.MediaNumeros;
+import Pages.IndexPage;
 
 
 public class TestCase4 {
 	String baseUrl = "https://primer-parcial-eyads.netlify.app/";
 	public WebDriver driver;
-	private MediaNumeros calculo;
+	private IndexPage index;
 	
 	@Test
 	public void Calcular_media_cuando_valor_es_menor_a_minimo() {
-	    calculo=new MediaNumeros(driver);
+	    index = new IndexPage(driver);
 		calculo.introducirValores("1, 2", "5", "10");
 	    Assert.assertEquals(calculo.calcularResultado(),"Media:-999  Total entradas:2  Total validos:0");  
 	}
