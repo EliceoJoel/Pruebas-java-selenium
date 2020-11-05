@@ -6,17 +6,17 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import Paginas.MediaNumeros;
+import Pages.IndexPage;
 
 
 public class TestCase3 {
 	String baseUrl = "https://primer-parcial-eyads.netlify.app/";
 	public WebDriver driver;
-	private MediaNumeros calculo;
+	private IndexPage index;
 	
 	@Test
 	public void Calcular_media_cuando_valor_es_mayor_a_maximo() {
-	    calculo=new MediaNumeros(driver);
+	    index = new IndexPage(driver);
 		calculo.introducirValores("10,11", "1", "9");
 	    Assert.assertEquals(calculo.calcularResultado(),"Media:-999  Total entradas:2  Total validos:0");  
 	}
