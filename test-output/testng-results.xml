@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10708" started-at="2020-06-29T16:41:38 BOT" finished-at="2020-06-29T16:41:49 BOT">
+  <suite name="Default suite" duration-ms="5756" started-at="2020-11-05T14:45:15 BOT" finished-at="2020-11-05T14:45:21 BOT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10708" started-at="2020-06-29T16:41:38 BOT" finished-at="2020-06-29T16:41:49 BOT">
-      <class name="Tests.DepartureCitySelectionTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:Tests.DepartureCitySelectionTest@23e028a9]" name="setup" is-config="true" duration-ms="6867" started-at="2020-06-29T16:41:38 BOT" finished-at="2020-06-29T16:41:45 BOT">
+    <test name="Default test" duration-ms="5756" started-at="2020-11-05T14:45:15 BOT" finished-at="2020-11-05T14:45:21 BOT">
+      <class name="Tests.CampoValorVacio">
+        <test-method status="PASS" signature="setup()[pri:0, instance:Tests.CampoValorVacio@23e028a9]" name="setup" is-config="true" duration-ms="5373" started-at="2020-11-05T14:45:15 BOT" finished-at="2020-11-05T14:45:20 BOT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="VerifyTheDepartureCitySelection()[pri:0, instance:Tests.DepartureCitySelectionTest@23e028a9]" name="VerifyTheDepartureCitySelection" duration-ms="3708" started-at="2020-06-29T16:41:45 BOT" finished-at="2020-06-29T16:41:49 BOT">
+        <test-method status="PASS" signature="VerificarMedia()[pri:0, instance:Tests.CampoValorVacio@23e028a9]" name="VerificarMedia" duration-ms="124" started-at="2020-11-05T14:45:21 BOT" finished-at="2020-11-05T14:45:21 BOT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyTheDepartureCitySelection -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:Tests.DepartureCitySelectionTest@23e028a9]" name="quit" is-config="true" duration-ms="90" started-at="2020-06-29T16:41:49 BOT" finished-at="2020-06-29T16:41:49 BOT">
+        </test-method> <!-- VerificarMedia -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:Tests.CampoValorVacio@23e028a9]" name="quit" is-config="true" duration-ms="229" started-at="2020-11-05T14:45:21 BOT" finished-at="2020-11-05T14:45:21 BOT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-      </class> <!-- Tests.DepartureCitySelectionTest -->
+      </class> <!-- Tests.CampoValorVacio -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

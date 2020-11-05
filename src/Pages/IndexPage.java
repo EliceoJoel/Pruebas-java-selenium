@@ -10,27 +10,83 @@ public class IndexPage {
 	
 	WebDriver driver;
 	
-	@FindBy(xpath = ".//*[@name='userName']")
-	private WebElement userName;
-	@FindBy(xpath = ".//*[@name='password']")
-	private WebElement password;
-	@FindBy(xpath = ".//*[@name='login']")
-	private WebElement submit;
-    
+	
+	@FindBy(xpath = ".//*[@id='valor']")
+	private WebElement valor;
+	
+	@FindBy(xpath = ".//*[@id='minimo']")
+	private WebElement minimo;
+	
+	@FindBy(xpath = ".//*[@id='maximo']")
+	private WebElement maximo;
+	
+	@FindBy(xpath = ".//button[@type='submit']")
+	private WebElement calcular;
+	
+	@FindBy(xpath = ".//*[@id='media']")
+	private WebElement media;
+	
+	@FindBy(xpath = ".//*[@id='entradas']")
+	private WebElement entradas;
+	
+	@FindBy(xpath = ".//*[@id='valido']")
+	private WebElement valido;
+	
+	@FindBy(xpath = ".//*[@id='errorValor']")
+	private WebElement errorValor;
+	
     
     public IndexPage(WebDriver driver){
     	this.driver = driver;
         PageFactory.initElements(driver, this);
     }
     
-    public FlightFinderPage EnterCredentials(String un, String pass) {
+    public String test1(String valores, String min, String max) {
     	
-    	userName.clear();			
-    	password.clear();			
-    	userName.sendKeys(un);					
-    	password.sendKeys(pass);	
-    	submit.click();
-    	return new FlightFinderPage(driver);
+    	valor.clear();			
+    	minimo.clear();	
+    	maximo.clear();
+    	valor.sendKeys(valores);					
+    	minimo.sendKeys(min);	
+    	maximo.sendKeys(max);
+    	calcular.click();
+    	
+    	return media.getText();
     }  
+    
+    public String test2(String valores, String min, String max) {
+    	
+    	valor.clear();			
+    	minimo.clear();	
+    	maximo.clear();
+    	valor.sendKeys(valores);					
+    	minimo.sendKeys(min);	
+    	maximo.sendKeys(max);
+    	calcular.click();
+    	
+    	return entradas.getText();
+    }  
+    
+    public String test3(String valores, String min, String max) {
+    	
+    	valor.clear();			
+    	minimo.clear();	
+    	maximo.clear();
+    	valor.sendKeys(valores);					
+    	minimo.sendKeys(min);	
+    	maximo.sendKeys(max);
+    	calcular.click();
+    	
+    	return media.getText();
+    }  
+    
+    
+    public String test4() {
+    	
+    	calcular.click();
+    	
+    	return errorValor.getText();
+    }  
+
 
 }
