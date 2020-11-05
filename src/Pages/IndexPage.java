@@ -86,7 +86,53 @@ public class IndexPage {
     	calcular.click();
     	
     	return errorValor.getText();
+	}  
+	public String Test4 (String a, String b  , String c) {
+    	
+    	valor.clear();			
+    	minimo.clear();
+    	maximo.clear();	
+ 
+    	valor.sendKeys(a);				
+    	minimo.sendKeys(b);	
+    	maximo.sendKeys(c);	
+    	calcular.click();
+    	
+    	return errorValor.getText();
+    	
+    	
     }  
+public String Test5 (String a, String b  , String c) {
+	
+	valor.clear();			
+	minimo.clear();
+	maximo.clear();	
+
+	valor.sendKeys(a);				
+	minimo.sendKeys(b);	
+	maximo.sendKeys(c);	
+	calcular.click();
+	
+	return errorValor.getText();
+	
+	
+} 
+
+public String Test6 (String a, String b  , String c) {
+	
+	valor.clear();			
+	minimo.clear();
+	maximo.clear();	
+
+	valor.sendKeys(a);				
+	minimo.sendKeys(b);	
+	maximo.sendKeys(c);	
+	calcular.click();
+	
+	return valido.getText();
+	
+	
+} 
 
 
 }
